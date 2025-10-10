@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color:aqua; 
+    font-family: fantasy;
+}
+form{
+    margin: 200px;
+    padding: 200px;
+    background-color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+label{
+     color: rgb(84, 57, 109);
+     background-color: aqua;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: small;
+}
+</style>
+</head>
+<body>
+
+        <header>cith engineering college</header>
+    <nav>
+        <ul>
+            <li><a href="../tables.html" >forms</li></a>
+            <li><a herf="forms.html">table</li></a>
+        </ul>
+    </nav>
+    <h1 style="text-align: center; color: rgb(0, 128, 58); background-color: rgba(235, 20, 20, 0.289);">basic form</h1>
+
+    <form action="/submit" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required/><br><br>
+        <label for="email">email</label>
+        <input type="email" id="email" email="email" required/><br><br>
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gender" value="male"><br><br>
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender" value="female"><br><br>
+        <h3> terms and conditions </h3>
+        <label><input type="checkbox" name="terms" required/>i agree to terms and conditions</label><br><br>
+        <label for="department">department</label>
+        <select id="deparmant"name="deparment">
+           <option value="ISE">ISE</option>
+            <option value="CSE">CSE</option>
+            <option value="EC">EC</option>
+            <option value="EEE">EEE</option>
+            <option value="AI">AI</option>
+        </select><br><br>
+       <label for="password">pasword</label>
+        <input type="password" id="password" password="password" required/><br><br>
+        <label for="brithday">birthday</label>
+        <input type="date" id="birthday" name="birthday" required>/<br/><br/>
+        <textarea>discription</textarea><br><br>
+        <label for="video">upload video</label>
+        <input type="file" name="video"id="video"accept="video/*">/<br/><br/>
+        <label for="pdf">upload pdf</label>
+        <input type="file" name="pdf"id="pdf"accept=" application/spdf/*">/<br/><br/>
+        <label for="doc">upload doc</label>
+        <input type="file" name="doc"id="doc"accept=" application/doc/*">/<br/><br/>
+        <label for="rating">give your rating</label>
+        <input type="range" name="range"id="range"min="0" max="100">/<br/><br/>
+        <label for="color"> color</label>
+        <input type="color" name="color"id="color"/>/<br/><br/>
+        <button type="reset">reset</button>
+        <input type="submit"value="submit"/>
+        </label>
+    </form>
+</body>
+</html>
