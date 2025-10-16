@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ES6 Feature</h1>
+    <p id="demo"></p>
+
+    <script>
+        // 1. let and const
+        let name="Alice";
+        const pi = 3.1416;
+        console.log(name, pi);
+
+        //2.Template literals
+        let age=25;
+        let greeting= 'Hello ${name}, you are ${age} years old.';
+        console.log(greeting);
+
+        //3.default parameters
+        const multiply = (a, b = 2)=> a*b;
+        console.log("multiply:",multiply(5));
+
+        //4.destruction array
+        const numbers = [10, 20, 30];
+        const [x, y, z] = numbers;
+        console.log("destructed:", x, y, z);
+
+        //5.destructing object
+        const person = { fname: "Bob", city: "NY"};
+        const { fname, city } = person;
+        console.log("object destructed:",fname, city);
+
+        //6.spread operator
+        const arr1 = [1,2];
+        const arr2 = [3,4];
+        const combined = [...arr1, ...arr2];
+        console.log("combined array:",combined);
+
+        //7.arrow function
+        const add = (a,b) => a+b;
+        console.log("arrow add:", add(5,10));
+
+        //display something on the page
+        document.getElementById("demo").
+        innerText = greeting;
+    </script>
+</body>
+</html>
